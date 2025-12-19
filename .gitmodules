@@ -1,0 +1,9 @@
+[submodule "compliancy-agent-app"]
+	path = compliancy-agent-app
+	url = git@github.com:sebps/compliancy-agent-app.git
+[submodule "compliancy-agent-api"]
+	path = compliancy-agent-api
+	url = git@github.com:sebps/compliancy-agent-api.git
+[submodule "compliancy-agent-etl"]
+	path = compliancy-agent-etl
+	url = git@github.com:sebps/compliancy-agent-etl.git
