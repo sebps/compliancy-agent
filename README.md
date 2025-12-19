@@ -1,6 +1,28 @@
 # Compliancy Agent
 Sample project exposing a product compliancy research capability to users.
 
+## Installation
+Command to checkout the whole project with submodules
+`git clone --recurse-submodules git@github.com:sebps/compliancy-agent.git`
+
+## Usage
+1. etl — download data
+- cd ./compliancy-agent-etl
+- Open and follow the README.md instructions to install dependencies and run the extract/transform/load steps so the nd-json output is produced in the project data location.
+
+2. api — spin up API server
+- cd ./compliancy-agent-api
+- Open and follow the README.md instructions to install dependencies, configure any required env vars and DB connections, and start the HTTP server.
+
+3. app — start the interface
+- cd ./compliancy-agent-app
+- Open and follow the README.md instructions to install dependencies and run the React SPA. Open the displayed URL in a browser and submit queries that target the running API.
+
+Notes:
+- Ensure the API is configured to read the ETL output (or the database populated by ETL) before starting the app.
+- Follow module READMEs in order (etl → api → app) to ensure data, server and UI are available.
+- Total llm consumption from ETL component should not exceed $0.50 using Deepseek and default website target at https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20190813   
+
 ## Components
 
 ### etl
