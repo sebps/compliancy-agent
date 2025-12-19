@@ -14,7 +14,7 @@ Http server exposing inquiry capability to user through routes :
 - POST /inquiries to submit a new inquiry
 - GET /inquiries/:inquiryId to track the query state through a sse stream
 
-### langgraph agent
+### agent
 Langgraph-based agent orchestrating the research, fetching results from product database and analyzing query compliancy against found records. 
 
 ### app 
